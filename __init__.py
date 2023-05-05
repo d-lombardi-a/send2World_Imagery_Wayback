@@ -27,5 +27,5 @@
 
 def classFactory(iface):
     # Import class TestPlugin from file testplugin.py
-    from .send2World_Wayback_Imagery import Send2WIW
+    from .send2World_Imagery_Wayback import Send2WIW
     return Send2WIW(iface)
