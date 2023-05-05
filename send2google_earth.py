@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 #******************************************************************************
 #
-# Send2Google_Earth
+# Send2World_Imagery_Wayback
 # ---------------------------------------------------------
-# This plugin takes coordinates of a mouse click and sends them to Google Earth
+# This plugin takes coordinates of a mouse click and sends them to World Imagery Wayback
 #
-# Copyright (C) 2013 Maxim Dubinin (sim@gis-lab.info), NextGIS (info@nextgis.org)
+# Copyright (C) 2023 Dario lombardi (d.lombardi@arpalombardia.it), ARPA Lombardia (https://www.arpalombardia.it/)
 #
 # This source is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free
@@ -31,10 +31,10 @@ from qgis.PyQt.QtWidgets import QAction
 from qgis.core import *
 
 from .compat import get_file_dir
-from .send2google_earthtool import Send2GEtool
+from .send2World_Imagery_Wayback_tool import Send2WIWtool
 
 
-class Send2GE:
+class Send2WIW:
   def __init__(self, iface):
     """Initialize class"""
     # save reference to QGIS interface
@@ -45,15 +45,15 @@ class Send2GE:
     """Initialize graphic user interface"""
     #create action that will be run by the plugin
     self.action = QAction(
-        QIcon("%s/icons/cursor2.png" % self.plugin_dir),
-        "Send to Google Earth",
+        QIcon("%s/icons/cursor.png" % self.plugin_dir),
+        "Send to World Imagery Wayback",
         self.iface.mainWindow()
     )
-    self.action.setWhatsThis("Send to Google Earth")
-    self.action.setStatusTip("Send coordinates of a mouse click to Google Earth")
+    self.action.setWhatsThis("Send to World Imagery Wayback")
+    self.action.setStatusTip("Send coordinates of a mouse click to World Imagery Wayback")
     
     # add plugin menu to Vector toolbar
-    self.iface.addPluginToMenu("Send2GoogleEarth",self.action)
+    self.iface.addPluginToMenu("Send2WorldImageryWayback",self.action)
     
     # add icon to new menu item in Vector toolbar
     self.iface.addToolBarIcon(self.action)
@@ -62,14 +62,14 @@ class Send2GE:
     self.action.triggered.connect(self.run)
 
     # prepare map tool
-    self.mapTool = Send2GEtool(self.iface)
+    self.mapTool = Send2WIWtool(self.iface)
     #self.iface.mapCanvas().mapToolSet.connect(self.mapToolChanged)
       
   def unload(self):
     """Actions to run when the plugin is unloaded"""
     # remove menu and icon from the menu
     self.iface.removeToolBarIcon(self.action)
-    self.iface.removePluginMenu("Send2GoogleEarth",self.action)
+    self.iface.removePluginMenu("Send2WorldImageryWayback",self.action)
 
     if self.iface.mapCanvas().mapTool() == self.mapTool:
       self.iface.mapCanvas().unsetMapTool(self.mapTool)
