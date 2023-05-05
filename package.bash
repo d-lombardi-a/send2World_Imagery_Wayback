@@ -2,12 +2,12 @@
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 cd $DIR
 
-rm -f send2google_earth.zip
+rm -f send2World_Imagery_Wayback.zip
 
-mkdir -p send2google_earth
-cp *.py send2google_earth/
-cp README.md send2google_earth/
-cp metadata.txt send2google_earth/
-cp -R icons/ send2google_earth/icons/
-zip -r send2google_earth.zip send2google_earth
-rm -rf send2google_earth
+mkdir -p send2World_Imagery_Wayback
+cp *.py send2World_Imagery_Wayback/
+cp README.md send2World_Imagery_Wayback/
+cp metadata.txt send2World_Imagery_Wayback/
+cp -R icons/ send2World_Imagery_Wayback/icons/
+zip -r send2World_Imagery_Wayback.zip send2World_Imagery_Wayback
+rm -rf send2World_Imagery_Wayback
