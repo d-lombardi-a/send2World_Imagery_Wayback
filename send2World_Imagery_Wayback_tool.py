@@ -73,4 +73,4 @@ class Send2WIWtool(QgsMapTool):
         xform = QgsCoordinateTransform(crsSrc, crsWGS)
         point = xform.transform(point)
     
-    webbrowser.open('https://livingatlas.arcgis.com/wayback/#localChangesOnly=true&ext='+str(point.x()-0.000005)+','+str(point.y()-0.000005)+','+str(point.x()+0.000005)+','+str(point.y()+0.000005))
+    webbrowser.open('https://livingatlas.arcgis.com/wayback/#localChangesOnly=true&ext='+str(point.x()-0.0005)+','+str(point.y()-0.0005)+','+str(point.x()+0.0005)+','+str(point.y()+0.0005))
