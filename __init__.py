@@ -1,11 +1,11 @@
 # -*- coding: utf-8 -*-
 #******************************************************************************
 #
-# Send2Google_Earth
+# Send2World_Imagery_Wayback
 # ---------------------------------------------------------
-# This plugin takes coordinates of a mouse click and sends them to Google Earth
+# This plugin takes coordinates of a mouse click and sends them to World Imagery Wayback
 #
-# Copyright (C) 2013 Maxim Dubinin (sim@gis-lab.info), NextGIS (info@nextgis.org)
+# Copyright (C) 2023 Dario Lombardi (d.lombardi@arpalombardia.it), ARPA Lombardia (https://www.arpalombardia.it/)
 #
 # This source is free software; you can redistribute it and/or modify it under
 # the terms of the GNU General Public License as published by the Free
