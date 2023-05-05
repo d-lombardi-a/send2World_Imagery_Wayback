@@ -1,14 +1,14 @@
 # -*- coding: utf-8 -*-
 """
 /***************************************************************************
- Send2Google_Earth
+ Send2World_Imagery_Wayback
                                  A QGIS plugin
  Collection of internet map services
                               -------------------
-        begin                : 2014-11-21
+        begin                : 2023-05-05
         git sha              : $Format:%H$
-        copyright            : (C) 2014 by NextGIS
-        email                : info@nextgis.com
+        copyright            : (C) 2023 by ARPA Lombardia
+        email                : d.lombardi@arpalombardia.it
  ***************************************************************************/
 /***************************************************************************
  *                                                                         *
