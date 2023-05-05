@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 # ***************************************************************************
-# qgi23.py  -  Send2Google_Earth QGIS plugin
+# qgi23.py  -  send2World_Imagery_Wayback QGIS plugin
 # ---------------------
-#     begin                : 2018-12-13
-#     copyright            : (C) 2018 by NextGIS
-#     email                : info@nextgis.com
+#     begin                : 2023-05-05
+#     copyright            : (C) 2023 by ARPA Lombardia
+#     email                : d.lombardi@arpalombardia.it
 # ***************************************************************************
 # *                                                                         *
 # *   This program is free software; you can redistribute it and/or modify  *
